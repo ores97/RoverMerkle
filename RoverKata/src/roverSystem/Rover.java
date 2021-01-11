@@ -38,7 +38,7 @@ public class Rover {
 				}
 			}
 		}catch (Exception e){ //If Rover finds a obstacle while moving, he goes back to his previous place so it does nothing and reports the obstacle
-			System.out.println("Obstacle found in the command:" + commands[i] + ". Rover is now safe at position " + position.getX() + "," + position.getY() );
+			System.out.println("Obstacle found in the command: " + commands[i] + ". Rover is now safe at position " + position.getX() + "," + position.getY() );
 		}
 	}
 	public void doOneCommand(char command) { //the execution of a sole command
@@ -59,13 +59,12 @@ public class Rover {
 			}
 	
 		}catch (Exception e){
-			System.out.println("Obstacle found in the command:" + command + ". Rover is now safe at position "  +position.getX() + "," + position.getY());
+			System.out.println("Obstacle found in the command: " + command + ". Rover is now safe at position "  +position.getX() + "," + position.getY());
 		}
 	}
 	public void turnRight() { //By putting the directions in int values the turning right it's only a little summation with exception controls 
 		direction = (direction + 1) % 4;
 	}
-	
 	public void turnLeft() { //Turning left is the same but also working with the values negative, so we can not use mod like the above method
 		if(direction != 0) {
 			direction--;
@@ -74,7 +73,6 @@ public class Rover {
 			direction = 3;
 		}
 	}
-	
 	public Position getPosition() {
 		return position;
 	}

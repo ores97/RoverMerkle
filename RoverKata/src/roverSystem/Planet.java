@@ -24,7 +24,7 @@ public class Planet {
 		this.planetMap = new char[size][size];
 		for (int i=0;i<planetMap.length;i++) {
 			for (int j=0;j<planetMap[0].length;j++) {
-				if (new Random().nextInt(4)!=0) {
+				if (new Random().nextInt(5)!=0) {
 					planetMap[i][j] = 'O';
 				}
 				else {

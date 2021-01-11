@@ -9,7 +9,14 @@ public class Position {
 		super();
 		this.x = x;
 		this.y = y;
-		this.planetMap = planetMap;
+		
+		char[][] transposedPlanetMap = new char[planetMap.length][planetMap[0].length]; //We make for the calculations a transposed array, so the X relates to East and West and not the other way around
+		for(int i = 0; i<planetMap.length;i++) {
+			for(int j = 0; j<planetMap[i].length;j++) {
+				transposedPlanetMap[i][j] = planetMap[j][i];
+			}
+		}
+		this.planetMap = transposedPlanetMap;
 		
 	}
 	public void advancePosition(int direction) throws Exception { //We advance the position and we check for obstacles on the ground
