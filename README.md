@@ -15,10 +15,10 @@ After this Patch, the Rover system is mainly done with all the requirements fulf
 This patch is in major part the refinement of the code (so it's easy to read) and to make the code to represent the Rover into the map in a image file that can be shown to the user.
 
 The commands to use the RESTAPI are easy:
-# http://localhost:911/rover/command/{command}
-  for example you can put a series of chars and it's going to work, such as http://localhost:911/rover/command/fflflflrb
-# http://localhost:911/rover/getMap
-  you're going to get the map of the planet that you created
+http://localhost:911/rover/command/{command}
+  For example you can put a series of chars and it's going to work, such as http://localhost:911/rover/command/fflflflrb
+http://localhost:911/rover/getMap
+  You're going to get the map of the planet that you created
 
 It was a fun project to make and to do things easily. Now I can say that the project is no longer in WIP and it's now readable for the Kata evaluators.
 
